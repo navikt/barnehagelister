@@ -31,7 +31,7 @@ Skjemaet i Altinn er skissert nedenfor:
 
 | Handling                          | Illustrasjon |
 |-----------------------------------|--------------|
-| **Altinn.no:** Person i kommunen med rollen _tilgangsstyring*_ og rettighet til barnehageliste eller rollen _Kommunale tjenester_ må logge inn i Altinn og velge hovedenheten på den virksomheten _Leverandøren_ skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
+| **Altinn.no:** Person i kommunen med rollen _tilgangsstyring **(*)**_ og rettighet til barnehageliste eller rollen _Kommunale tjenester_ må logge inn i Altinn og velge hovedenheten på den virksomheten _Leverandøren_ skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
 | Velg _Profil_ på menylinjen | ![Profil](Rettighet-profil.png) |
 | Velg deretter _Andre med rettigheter til virksomheten_ | ![Virksomhet](Rettighet-virksomhet.png)
 | Velg _Legg til ny person eller virksomhet_. | ![Legg til](Rettighet-legg-til.png) |
@@ -44,4 +44,4 @@ _Leverandøren_ har nå rettighet å representere kommunen med underenheter på 
 **Merk**. Daglig Leder og styreleder hos Leverandøren får implisitt samme rettigheter som Leverandøren.
 
 **NB!** For kommuner med virksomhetsledd må dette gjennomføres for samtlige relevante virksomhetsledd.
- * _«Person med rollen tilgangsstyring» er i en kommune ordfører og rådmann. Disse to kan da ha delegert dette videre til flere personer i kommunen. Ansvarlige personer knyttet til organisasjonsnummeret kan søkes opp på www.brreg.no . Kommuner med spørsmål relatert til dette må kontakte Altinn brukerstøtte for hjelp._
+**(*)** _«Person med rollen tilgangsstyring» er i en kommune ordfører og rådmann. Disse to kan da ha delegert dette videre til flere personer i kommunen. Ansvarlige personer knyttet til organisasjonsnummeret kan søkes opp på www.brreg.no . Kommuner med spørsmål relatert til dette må kontakte Altinn brukerstøtte for hjelp._
