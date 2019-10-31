@@ -18,7 +18,14 @@ Det er NAV som har utviklet _Barnehagelister_-tjenesten i Altinn
 - Service Edition Code: `1`
 - For å komme i kontakt med NAV kan adressen nav.altinn.lokalforvaltning@nav.no benyttes.
 
+## Skjema i Altinn
+Skjemaet i Altinn er skissert nedenfor:
 
+![Altinn-skjema for barnehagelister](Barnehageliste-skjema.png)
+
+## Skjemaflyt
+![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-1.png)
+![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-1.png)
 
 ## Welcome to GitHub Pages
 
