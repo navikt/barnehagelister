@@ -31,42 +31,17 @@ Skjemaet i Altinn er skissert nedenfor:
 
 | Handling                          | Illustrasjon |
 |-----------------------------------|--------------|
-| **Altinn.no:** Person i kommunen med rollen tilgangsstyring* og rettighet til barnehageliste eller rollen Kommunale tjenester må logge inn i Altinn og velge hovedenheten på den virksomheten Leverandøren skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
+| **Altinn.no:** Person i kommunen med rollen _tilgangsstyring*_ og rettighet til barnehageliste eller rollen _Kommunale tjenester_ må logge inn i Altinn og velge hovedenheten på den virksomheten _Leverandøren_ skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
+| Velg _Profil_ på menylinjen | ![Profil](Rettighet-profil.png) |
+| Velg deretter _Andre med rettigheter til virksomheten_ | ![Virksomhet](Rettighet-virksomhet.png)
+| Velg _Legg til ny person eller virksomhet_. | ![Legg til](Rettighet-legg-til.png) |
+| Legg inn organisasjonsnummeret til _Leverandøren_ og minimum de 4 første bokstavene i navnet.| ![Legg inn](Rettighet-registrer.png) |
+| Søk opp enkelttjenestene ved å skrive `Barnehagelister` i søkefeltet. Det er denne som skal tildeles. | ![Søk](Rettighet-tildel.png) |
+| Når du trykker på tjenesten `Barnehagelister` kommer du til et nytt vindu der du kan velge om du vil gi rollen `Kommunale tjenester` som gir rettighet til flere tjenester eller å kun gi tilgang til tjenesten _Barnehagelister_. | ![Fullfør](Rettighet-fullfoer.png) |
 
-## Welcome to GitHub Pages
+_Leverandøren_ har nå rettighet å representere kommunen med underenheter på kommunale tjenester eller tjenesten _Barnehagelister_.
 
-You can use the [editor on GitHub](https://github.com/navikt/barnehagelister/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Merk**. Daglig Leder og styreleder hos Leverandøren får implisitt samme rettigheter som Leverandøren.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/navikt/barnehagelister/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**NB!** For kommuner med virksomhetsledd må dette gjennomføres for samtlige relevante virksomhetsledd.
+ * _«Person med rollen tilgangsstyring» er i en kommune ordfører og rådmann. Disse to kan da ha delegert dette videre til flere personer i kommunen. Ansvarlige personer knyttet til organisasjonsnummeret kan søkes opp på www.brreg.no . Kommuner med spørsmål relatert til dette må kontakte Altinn brukerstøtte for hjelp._
