@@ -1,3 +1,24 @@
+## Bakgrunn
+
+NAV bruker barnehagelister for avslutning av kontantstøtte når barn starter i barnehagen. I dag sender kommunene barnehagelistene på papir eller PDF. Dette dokumentet beskriver Altinn-tjenesten _Barnehagelister - innsending av barnehagelister som brukes til kontroll av kontantstøtteutbetalinger_. På sikt vil det trolig bli _digitalt enevalg_ for rapportering på en rekke områder, analogt til hvordan inntektsmeldinger fra 1.1.2019 kun kan rapporteres elektronisk.
+
+## Kort om integrasjon med Altinn
+![Grensesnitt for innsending av Barnehagelister i Altinn](Barnehagelister-integrasjon-altinn.png)
+
+Altinn tilbyr APIet for innsending av _Barnehagelister_. Systemleverandørene som tar i bruk denne tjenesten må integrere med Altinn. 
+- Systemleverandøren kan velge å benytte WS eller REST mot Altinn
+- Systemleverandører henvender seg til Altinn for hjelp via adressen sluttbrukersystem@altinn.no
+- For informasjon om hvordan man kommer i gang, samt teknisk dokumentasjon:
+- https://altinn.github.io/docs/api/datasystem/
+- https://tt02.altinn.no/api/help
+
+Det er NAV som har utviklet _Barnehagelister_-tjenesten i Altinn
+- Service code: `4795` 
+- Service Edition Code: `1`
+- For å komme i kontakt med NAV kan adressen nav.altinn.lokalforvaltning@nav.no benyttes.
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/navikt/barnehagelister/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
