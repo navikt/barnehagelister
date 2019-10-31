@@ -31,7 +31,7 @@ Skjemaet i Altinn er skissert nedenfor:
 
 | Handling                          | Illustrasjon |
 |-----------------------------------|--------------|
-| **Altinn.no:** Person i kommunen med rollen tilgangsstyring* og rettighet til barnehageliste eller rollen Kommunale tjenester må logge inn i Altinn og velge hovedenheten på den virksomheten Leverandøren skal få rettigheter til. | ![Altinn](Rettighet-altinn.png) |
+| **Altinn.no:** Person i kommunen med rollen tilgangsstyring* og rettighet til barnehageliste eller rollen Kommunale tjenester må logge inn i Altinn og velge hovedenheten på den virksomheten Leverandøren skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
 
 ## Welcome to GitHub Pages
 
