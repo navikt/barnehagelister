@@ -8,9 +8,10 @@ NAV bruker barnehagelister for avslutning av kontantstøtte når barn starter i 
 Altinn tilbyr APIet for innsending av _Barnehagelister_. Systemleverandørene som tar i bruk denne tjenesten må integrere med Altinn. 
 - Systemleverandøren kan velge å benytte WS eller REST mot Altinn
 - Systemleverandører henvender seg til Altinn for hjelp via adressen sluttbrukersystem@altinn.no
-- For informasjon om hvordan man kommer i gang, samt teknisk dokumentasjon:
--- https://altinn.github.io/docs/api/datasystem/
--- https://tt02.altinn.no/api/help
+
+For informasjon om hvordan man kommer i gang, samt teknisk dokumentasjon:
+- https://altinn.github.io/docs/api/datasystem/
+- https://tt02.altinn.no/api/help
 
 Det er NAV som har utviklet _Barnehagelister_-tjenesten i Altinn
 - Service code: `4795` 
