@@ -30,7 +30,7 @@ Skjemaet i Altinn er skissert nedenfor:
 ## Tildeling av rettigheter i Altinn for Barnehagelister
 
 | Handling                          | Illustrasjon |
-|-----------------------------------|--------------|
+|:----------------------------------|:-------------|
 | **Altinn.no:** Person i kommunen med rollen _tilgangsstyring **(*)**_ og rettighet til barnehageliste eller rollen _Kommunale tjenester_ må logge inn i Altinn og velge hovedenheten på den virksomheten _Leverandøren_ skal få rettigheter til. | ![Altinn](Rettighet-Altinn.png) |
 | Velg _Profil_ på menylinjen | ![Profil](Rettighet-profil.png) |
 | Velg deretter _Andre med rettigheter til virksomheten_ | ![Virksomhet](Rettighet-virksomhet.png)
