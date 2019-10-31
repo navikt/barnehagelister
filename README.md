@@ -1,6 +1,6 @@
 ## Bakgrunn
 
-NAV bruker barnehagelister for avslutning av kontantstøtte når barn starter i barnehagen. I dag sender kommunene barnehagelistene på papir eller PDF. Dette dokumentet beskriver Altinn-tjenesten _Barnehagelister - innsending av barnehagelister som brukes til kontroll av kontantstøtteutbetalinger_. På sikt vil det trolig bli _digitalt enevalg_ for rapportering på en rekke områder, analogt til hvordan inntektsmeldinger fra 1.1.2019 kun kan rapporteres elektronisk.
+NAV bruker barnehagelister for avslutning av kontantstøtte når barn starter i barnehagen. I dag sender kommunene barnehagelistene på papir eller PDF. NAV ønsker at alle leverandører av barnehagesystemer skal ta i bruk Altinn-tjenesten _Barnehagelister - innsending av barnehagelister som brukes til kontroll av kontantstøtteutbetalinger_. På sikt vil det trolig bli _digitalt enevalg_ for rapportering på en rekke områder, analogt til hvordan inntektsmeldinger fra 1.1.2019 kun kan rapporteres elektronisk.
 
 ## Kort om integrasjon med Altinn
 ![Grensesnitt for innsending av Barnehagelister i Altinn](Barnehagelister-integrasjon-altinn.png)
