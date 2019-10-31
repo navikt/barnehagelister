@@ -25,7 +25,13 @@ Skjemaet i Altinn er skissert nedenfor:
 
 ## Skjemaflyt
 ![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-1.png)
-![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-1.png)
+![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-2.png)
+
+## Tildeling av rettigheter i Altinn for Barnehagelister
+
+| Handling                          | Illustrasjon |
+|-----------------------------------|--------------|
+| Test                              | Bilde |
 
 ## Welcome to GitHub Pages
 
