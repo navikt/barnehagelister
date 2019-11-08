@@ -33,7 +33,7 @@ Skjemaet i Altinn er skissert nedenfor:
 ![Skjemaflyt for barnehagelister 1](Barnehageliste-skjemaflyt-2.png)
 
 ## XSD-skjema
-![XSD](Barnehagelister201702_V3)
+![XSD](Barnehagelister201702_V3.xsd)
 
 
 ## Tildeling av rettigheter i Altinn for Barnehagelister
