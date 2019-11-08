@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://seres.no/xsd/NAV/Barnehagelister_M/2017"
+			xmlns:seres="http://seres.no/xsd/forvaltningsdata"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://seres.no/xsd/NAV/Barnehagelister_M/2017"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+   <!--xsd:annotation>
+      <xsd:documentation>
+         <xsd:attribute name="XSLT-skriptnavn" fixed="SERES_XSD_GEN"/>
+         <xsd:attribute name="XSD-generatorversjon" fixed="2.0.17"/>
+         <xsd:attribute name="XSLT-prosessor" fixed="SAXON versjon 9.1.0.7"/>
+         <xsd:attribute name="generert" fixed="2017-02-20T13:23:45.305+01:00"/>
+         <xsd:attribute name="navneromprefix" fixed="http://seres.no/xsd"/>
+         <xsd:attribute name="namespace" fixed="http://seres.no/xsd/NAV/Barnehagelister_M/2017"/>
+         <xsd:attribute name="meldingsnavn" fixed="melding"/>
+         <xsd:attribute name="domenenavn" fixed="NAV"/>
+         <xsd:attribute name="modellnavn" fixed="Barnehagelister_M"/>
+         <xsd:attribute name="metamodellversjon" fixed="1.2"/>
+         <xsd:attribute name="guid" fixed="true"/>
+         <xsd:attribute name="orid" fixed="false"/>
+         <xsd:attribute name="nillable" fixed="true"/>
+         <xsd:attribute name="tillat-gjenbruk" fixed="true"/>
+         <xsd:attribute name="elementtype" fixed="true"/>
+         <xsd:attribute name="forvaltningsdata" fixed="true"/>
+         <xsd:attribute name="forvaltningsdata-navnerom" fixed="http://seres.no/xsd/forvaltningsdata"/>
+         <xsd:attribute name="saernorske-bokstaver-i-navn" fixed="false"/>
+         <xsd:attribute name="ft_guid_som_attributt" fixed="false"/>
+         <xsd:attribute name="sem-ref" fixed="false"/>
+         <xsd:attribute name="kodebibliotek" fixed="false"/>
+         <xsd:attribute name="spraak" fixed=""/>
+         <xsd:attribute name="XSD-variant" fixed="Altinn 1.3.1"/>
+      </xsd:documentation>
+   </xsd:annotation-->
+   <xsd:element name="melding" type="Barnehagelister_M"/>
+   <xsd:complexType name="Barnehagelister_M" seres:elementtype="Meldingsmodell"
+                    seres:guid="http://seres.no/guid/NAV/Meldingsmodell/Barnehagelister_M/636326">
+      <xsd:sequence>
+         <xsd:element name="skjema" type="skjema" seres:elementtype="Meldingsdel"
+                      seres:guid="http://seres.no/guid/NAV/Meldingsdel/skjema/636305"/>
+      </xsd:sequence>
+      <!--xsd:attribute name="dataFormatProvider" type="xsd:string" use="required" fixed="SERES"/>
+      <xsd:attribute name="dataFormatId" type="xsd:string" use="required" fixed="5490"/>
+      <xsd:attribute name="dataFormatVersion" type="xsd:string" use="required" fixed="41831"/-->
+      <xsd:anyAttribute/>
+   </xsd:complexType>
+   <xsd:complexType name="skjema" seres:elementtype="Meldingsdel"
+                    seres:guid="http://seres.no/guid/NAV/Meldingsdel/skjema/636305">
+      <xsd:sequence>
+         <xsd:element name="listeopplysninger" type="Listeopplysninger"
+                      seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/listeopplysninger/636303"/>
+         <xsd:element name="barnInfolinjer" type="BarnInfolinjer"
+                      seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/barnInfolinjer/636335"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Listeopplysninger" seres:elementtype="Datakomplekstype"
+                    seres:guid="http://seres.no/guid/NAV/Datakomplekstype/Listeopplysninger/636320">
+      <xsd:sequence>
+         <xsd:element name="kommuneNavn" type="Tekst" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/kommuneNavn/636319"/>
+         <xsd:element name="kommuneNr" type="KommuneNr" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/kommuneNr/637426"/>
+         <xsd:element name="aarInnsending" type="AAr" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/aarInnsending/636317"/>
+         <xsd:element name="maanedInnsending" type="Maaned" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/maanedInnsending/636316"/>
+         <xsd:element name="produsertDatoTid" type="DatoTid" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/produsertDatoTid/636315"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BarnInfolinjer" seres:elementtype="Dataobjekttype"
+                    seres:guid="http://seres.no/guid/NAV/Dataobjekttype/BarnInfolinjer/636331">
+      <xsd:sequence>
+         <xsd:element name="barnInfolinje" maxOccurs="unbounded"
+                      seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/barnInfolinje/636330">
+            <xsd:complexType>
+               <xsd:complexContent>
+                  <xsd:extension base="BarnInfolinje">
+                     <xsd:anyAttribute/>
+                  </xsd:extension>
+               </xsd:complexContent>
+            </xsd:complexType>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BarnInfolinje" seres:elementtype="Dataobjekttype"
+                    seres:guid="http://seres.no/guid/NAV/Dataobjekttype/BarnInfolinje/636302">
+      <xsd:sequence>
+         <xsd:element name="endringstype" type="Endringstype" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/endringstype/636295"/>
+         <xsd:element name="barn" type="PersonInfo" seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/barn/636300"/>
+         <xsd:element name="foreldre" type="Foreldre" seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/foreldre/636334"/>
+         <xsd:element name="barnehage" type="Barnehage" seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/barnehage/636297"/>
+         <xsd:element name="avtaltOppholdstidTimer" type="Desimaltall"
+                      seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/oppholdstidTimer/636299"/>
+         <xsd:element name="endretOppholdstidDato" type="Dato" nillable="true" minOccurs="0"
+                      seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/endretOppholdstidDato/637379"/>
+         <xsd:element name="startdato" type="Dato" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/startdato/636298"/>
+         <xsd:element name="sluttdato" type="Dato" nillable="true" minOccurs="0"
+                      seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/sluttdato/636296"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="PersonInfo" seres:elementtype="Dataobjekttype"
+                    seres:guid="http://seres.no/guid/NAV/Dataobjekttype/PersonInfo/636309">
+      <xsd:sequence>
+         <xsd:element name="navn" type="Navn" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/navn/636308"/>
+         <xsd:element name="fodselsnummer" type="IDnummerPerson" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/fodselsnummer/636307"/>
+         <xsd:element name="adresse" type="Adresse" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/adresse/636306"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Adresse" seres:elementtype="Datakomplekstype"
+                    seres:guid="http://seres.no/guid/NAV/Datakomplekstype/Adresse/636324">
+      <xsd:sequence>
+         <xsd:element name="gateOgNummer" type="Tekst" nillable="true" minOccurs="0"
+                      seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/gateOgNummer/636323"/>
+         <xsd:element name="postnummer" type="Postnummer" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/postnummer/636322"/>
+         <xsd:element name="poststed" type="Poststed" seres:elementtype="DataTypeegenskap"
+                      seres:guid="http://seres.no/guid/NAV/DataTypeegenskap/poststed/636321"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Foreldre" seres:elementtype="Dataobjekttype"
+                    seres:guid="http://seres.no/guid/NAV/Dataobjekttype/Foreldre/636333">
+      <xsd:sequence>
+         <xsd:element name="forelder" type="PersonInfo" maxOccurs="2"
+                      seres:elementtype="Relasjonsegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Relasjonsegenskap/forelder/636332"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="Barnehage" seres:elementtype="Dataobjekttype"
+                    seres:guid="http://seres.no/guid/NAV/Dataobjekttype/Barnehage/636294">
+      <xsd:sequence>
+         <xsd:element name="navn" type="Tekst" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/navn/636336"/>
+         <xsd:element name="organisasjonsnummer" type="Organisasjonsnummer"
+                      seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/organisasjonsnummer/636292"/>
+         <xsd:element name="adresse" type="Adresse" seres:elementtype="Dataegenskap"
+                      seres:guid="http://seres.no/guid/NAV/Dataegenskap/adresse/636293"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:simpleType name="Tekst" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Tekst/451470">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="KommuneNr" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/KommuneNr/637433">
+      <xsd:restriction base="RestriksjonTall4siffer"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="RestriksjonTall4siffer" seres:elementtype="Tegnrestriksjon"
+                   seres:guid="http://seres.no/guid/NAV/Tegnrestriksjon/RestriksjonTall4siffer/637431">
+      <xsd:restriction base="xsd:string">
+         <xsd:length value="4"/>
+         <xsd:pattern value="[0-9]{4}"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="AAr" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/År/451454">
+      <xsd:restriction base="RestriksjonAar"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="RestriksjonAar" seres:elementtype="Tallrestriksjon"
+                   seres:guid="http://seres.no/guid/NAV/Tallrestriksjon/RestriksjonAar/637432">
+      <xsd:restriction base="xsd:integer">
+         <xsd:totalDigits value="4"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="Maaned" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Måned/451466">
+      <xsd:restriction base="RestriksjonMaanedTekst"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="RestriksjonMaanedTekst" seres:elementtype="Tegnrestriksjon"
+                   seres:guid="http://seres.no/guid/NAV/Tegnrestriksjon/RestriksjonMaanedTekst/637428">
+      <xsd:restriction base="xsd:string">
+         <xsd:length value="2"/>
+         <xsd:pattern value="[0-9]{2}"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="DatoTid" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/DatoTid/634647">
+      <xsd:restriction base="xsd:dateTime"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="Endringstype" seres:elementtype="Datakodeliste"
+                   seres:guid="http://seres.no/guid/NAV/Datakodeliste/Endringstype/636314">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="barnStartet" seres:elementtype="Datakodeelement"
+                          seres:guid="http://seres.no/guid/NAV/Datakodeelement/barnStartet/636313"/>
+         <xsd:enumeration value="barnSluttet" seres:elementtype="Datakodeelement"
+                          seres:guid="http://seres.no/guid/NAV/Datakodeelement/barnSluttet/636312"/>
+         <xsd:enumeration value="oppholdstidEndret" seres:elementtype="Datakodeelement"
+                          seres:guid="http://seres.no/guid/NAV/Datakodeelement/oppholdstidEndret/636311"/>
+         <xsd:enumeration value="ikkeEndret" seres:elementtype="Datakodeelement"
+                          seres:guid="http://seres.no/guid/NAV/Datakodeelement/ikkeEndret/636310"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="Navn" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Navn/451457">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="IDnummerPerson" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Fødselsnummer/451463">
+      <xsd:restriction base="RestriksjonIDnummerPerson"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="RestriksjonIDnummerPerson" seres:elementtype="Tegnrestriksjon"
+                   seres:guid="http://seres.no/guid/NAV/Tegnrestriksjon/RestriksjonFødselsnummer/573726">
+      <xsd:restriction base="xsd:string">
+         <xsd:length value="11"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="Postnummer" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Postnummer/451465">
+      <xsd:restriction base="RestriksjonTall4siffer"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="Poststed" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Poststed/451467">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="Organisasjonsnummer" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Organisasjonsnummer/451456">
+      <xsd:restriction base="RestriksjonOrganisasjonsnummer"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="RestriksjonOrganisasjonsnummer" seres:elementtype="Tegnrestriksjon"
+                   seres:guid="http://seres.no/guid/NAV/Tegnrestriksjon/RestriksjonOrganisasjonsnummer/573724">
+      <xsd:restriction base="xsd:string">
+         <xsd:length value="9"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="Desimaltall" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Desimaltall/636328">
+      <xsd:restriction base="xsd:decimal"/>
+   </xsd:simpleType>
+   <xsd:simpleType name="Dato" seres:elementtype="Dataenkeltype"
+                   seres:guid="http://seres.no/guid/NAV/Dataenkeltype/Dato/451464">
+      <xsd:restriction base="xsd:date"/>
+   </xsd:simpleType>
+</xsd:schema>
